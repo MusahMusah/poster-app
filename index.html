@@ -66,7 +66,7 @@
                     object-fit: contain;
                     top: 6rem;
                   " src="img/1--4-forma-1.png" alt="" />
-                            <span id="hide-text" class="text-center" style="
+                            <span onclick="openImage()" id="hide-text" class="text-center" style="
                     position: absolute;
                     left: 4.5rem;
                     top: 11rem;
@@ -82,17 +82,19 @@
                 </div>
                 <div class="col-md-6">
                     <div class="card" style="border-radius: 1.4rem">
-                        <div class="card-body px-5 font-weight-bold" style="
+                        <div class="card-body px-5 font-weight-bold" id="user-input-text" style="
                   padding-bottom: 5rem;
                   position: relative;
                   font-weight: bold;
                   font-size: 1.4rem;
                 ">
 
-                            <textarea name="" id="" class="form-control" rows="5"></textarea>
-                            <br /> It Is Time We Represent Ourselves In Governance and Politics.
+                            <textarea name="" id="user-input" class="form-control" rows="5"></textarea>
+                            <div>
+                                It Is Time We Represent Ourselves In Governance and Politics.
+                            </div>
                         </div>
-                        <a href="" class="text-white btn" style="
+                        <a onclick="generatePoster()" class="text-white btn" style="
                   background-color: #2f9fd9;
                   padding: 0.8rem;
                   width: 16rem;
@@ -136,6 +138,15 @@
                 URL.revokeObjectURL(output.src); // free memory
             };
             document.getElementById("hide-text").style.display = "none";
+        }
+
+        function generatePoster() {
+            const userInput = document.getElementById('user-input').value
+            document.getElementById('user-input').remove()
+            let newDiv = document.createElement('div')
+            newDiv.id = "new1";
+            newDiv.innerHTML = userInput
+            document.getElementById('user-input-text').prepend(newDiv)
         }
     </script>
 </body>
