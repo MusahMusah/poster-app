@@ -1,3 +1,28 @@
+main {
+    /* background-image: url(../img/1--4-icon-fx.png), url('../img/1--4-background.png');
+    padding: 15px; */
+    /* background-position: left bottom, left top;
+    background-repeat: no-repeat, repeat;
+    background-image: url(../img/1--4-icon-fx.png);
+    background-size: 10rem; */
+    background-color: rgba(47, 159, 217, .2);
+}
+
+.demo-bg {
+    opacity: 0.1;
+    position: absolute;
+    left: 0;
+    top: -5rem;
+    height: 250px;
+    /* width: 100%; */
+    /* height: auto; */
+}
+
+.link-text {
+    color: #2f9fd9 !important;
+    font-weight: 700;
+}
+
 .profile_wrapper {
     position: relative;
 }
