@@ -1,0 +1,41 @@
+.profile_wrapper {
+    position: relative;
+}
+
+.input {
+    position: absolute;
+    left: 4rem;
+    bottom: -1.4rem;
+    border: 2px solid #228B22;
+    background-color: #FFA500;
+    border-radius: 16px;
+    padding: .7rem;
+}
+
+.input::placeholder {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.join-us {
+    background-color: transparent;
+    color: #2f9fd9;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 900;
+    padding-left: 2.2rem;
+    letter-spacing: 0.00px;
+    line-height: 69px;
+    width: auto;
+}
+
+.together {
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+    background-color: #2f9fd9;
+    color: white;
+    width: 300px;
+}
